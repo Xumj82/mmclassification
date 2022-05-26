@@ -13,10 +13,11 @@ from .mnist import MNIST, FashionMNIST
 from .multi_label import MultiLabelDataset
 from .samplers import DistributedSampler, RepeatAugSampler
 from .voc import VOC
+from .ddsm_patch import DdsmPatch
 
 __all__ = [
     'BaseDataset', 'ImageNet', 'CIFAR10', 'CIFAR100', 'MNIST', 'FashionMNIST',
-    'VOC', 'MultiLabelDataset', 'build_dataloader', 'build_dataset',
+    'VOC', 'MultiLabelDataset', 'build_dataloader', 'build_dataset','DdsmPatch',
     'DistributedSampler', 'ConcatDataset', 'RepeatDataset',
     'ClassBalancedDataset', 'DATASETS', 'PIPELINES', 'ImageNet21k', 'SAMPLERS',
     'build_sampler', 'RepeatAugSampler', 'KFoldDataset', 'CUB', 'CustomDataset'
