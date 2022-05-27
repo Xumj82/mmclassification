@@ -32,7 +32,7 @@ train_pipeline = [
     dict(type='Collect', keys=['img', 'gt_label'])
 ]
 test_pipeline = [
-    dict(type='LoadMMImageFromFile'),
+    dict(type='LoadImageFromFile'),
     dict(type='Resize', size=(256, -1)),
     dict(type='CenterCrop', crop_size=224),
     dict(type='Normalize', **img_norm_cfg),
@@ -90,4 +90,4 @@ data = dict(
         ann_file='/home/xumingjie/dataset/patch_set/img_dir/test_meta.csv',
         pipeline=test_pipeline))
 
-evaluation = dict(interval=10, metric='accuracy')
+evaluation = dict(interval=1, metric='accuracy')
