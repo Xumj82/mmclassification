@@ -3,7 +3,7 @@ import numpy as np
 from typing import Optional, Sequence, Union
 from .builder import DATASETS
 from .base_dataset import BaseDataset
-from mmdet.datasets.api_wrappers import COCO, COCOeval
+from mmdet.datasets.api_wrappers import COCO
 
 @DATASETS.register_module()
 class DdsmBreast(BaseDataset):
